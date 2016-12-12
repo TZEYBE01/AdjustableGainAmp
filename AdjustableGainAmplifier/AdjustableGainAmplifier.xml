@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\tolga\Documents\AdjustableGainAmplifier\AdjustableGainAmplifier.sch</source>
+    <date>12/11/2016 11:46:28 PM</date>
+    <tool>Eeschema 4.0.4-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Adjustable Gain Amplifier</title>
+        <company>Tolga Zeybek</company>
+        <rev>1</rev>
+        <date>2016-12-10</date>
+        <source>AdjustableGainAmplifier.sch</source>
+        <comment number="1" value=" 0 to 2V input -&gt; 0 to 5V output with common ground."/>
+        <comment number="2" value="Input LPF with adjustable cut-off between 5.8 and 80Hz."/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="P1">
+      <value>BNC</value>
+      <libsource lib="conn" part="BNC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584C68E3</tstamp>
+    </comp>
+    <comp ref="CON1">
+      <value>BARREL_JACK</value>
+      <libsource lib="conn" part="BARREL_JACK"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584C695C</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>AD603</value>
+      <libsource lib="ad603" part="AD603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584CA27F</tstamp>
+    </comp>
+    <comp ref="RV2">
+      <value>2k</value>
+      <libsource lib="device" part="POT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584CAFCC</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>3.01k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584CB1C2</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>0.1uF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584CCE7B</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>BNC</value>
+      <libsource lib="conn" part="BNC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584E0E34</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LTC6082</value>
+      <libsource lib="linear" part="LTC6082"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584E3A26</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>DUAL_POT</value>
+      <libsource lib="device" part="DUAL_POT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584E3AE6</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1nF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584E40D1</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>100</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584E43E3</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>2k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584E51FB</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>2k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584E5261</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>1nF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>584E5567</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="ad603" part="AD603">
+      <description>Variable Gain Amplifier</description>
+      <docs>C:/Users/tolga/Documents/AD603.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AD603</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GPOS" type="input"/>
+        <pin num="2" name="GNEG" type="input"/>
+        <pin num="3" name="VINP" type="input"/>
+        <pin num="4" name="COMM" type="input"/>
+        <pin num="5" name="VPOS" type="input"/>
+        <pin num="6" name="VOUT" type="input"/>
+        <pin num="7" name="VNEG" type="input"/>
+        <pin num="8" name="FDBK" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="BARREL_JACK">
+      <description>DC Barrel Jack</description>
+      <fields>
+        <field name="Reference">CON</field>
+        <field name="Value">BARREL_JACK</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="BNC">
+      <footprints>
+        <fp>BNC_*</fp>
+        <fp>bnc</fp>
+        <fp>bnc-*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">BNC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="In" type="passive"/>
+        <pin num="2" name="Ext" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="DUAL_POT">
+      <description>Potentionmetre</description>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">DUAL_POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="linear" part="LTC6082">
+      <description>Precision Quad Op amp.</description>
+      <docs>http://cds.linear.com/docs/en/datasheet/60812fd.pdf</docs>
+      <footprints>
+        <fp>ssop</fp>
+        <fp>dfn</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LTC6082</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V+" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="10" name="~" type="output"/>
+        <pin num="11" name="-" type="input"/>
+        <pin num="12" name="+" type="input"/>
+        <pin num="13" name="V-" type="power_in"/>
+        <pin num="14" name="+" type="input"/>
+        <pin num="15" name="-" type="input"/>
+        <pin num="16" name="~" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="POT">
+      <description>Potentionmetre</description>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="ad603">
+      <uri>C:\Users\tolga\Documents\ad603.lib</uri>
+    </library>
+    <library logical="linear">
+      <uri>C:\Program Files\KiCad\share\kicad\library\linear.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(RV2-Pad2)">
+      <node ref="U2" pin="1"/>
+      <node ref="RV2" pin="2"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="U2" pin="2"/>
+      <node ref="U2" pin="7"/>
+      <node ref="U2" pin="4"/>
+      <node ref="CON1" pin="3"/>
+      <node ref="CON1" pin="2"/>
+      <node ref="P1" pin="2"/>
+      <node ref="U1" pin="13"/>
+      <node ref="P2" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="RV2" pin="3"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="4" name="Net-(R1-Pad2)">
+      <node ref="RV1" pin="5"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="5" name="SIG_IN">
+      <node ref="R1" pin="1"/>
+      <node ref="P1" pin="1"/>
+    </net>
+    <net code="6" name="Net-(R2-Pad2)">
+      <node ref="R2" pin="2"/>
+      <node ref="RV1" pin="2"/>
+    </net>
+    <net code="7" name="Net-(C1-Pad2)">
+      <node ref="C1" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="RV1" pin="6"/>
+    </net>
+    <net code="8" name="AMP_IN">
+      <node ref="R3" pin="2"/>
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="9" name="Net-(RV1-Pad1)">
+      <node ref="RV1" pin="1"/>
+    </net>
+    <net code="10" name="Net-(RV1-Pad4)">
+      <node ref="RV1" pin="4"/>
+    </net>
+    <net code="11" name="+5V">
+      <node ref="R4" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U1" pin="4"/>
+      <node ref="CON1" pin="1"/>
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="12" name="Net-(C2-Pad2)">
+      <node ref="C2" pin="2"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="13" name="SIG_OUT">
+      <node ref="U2" pin="6"/>
+      <node ref="P2" pin="1"/>
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="14" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="RV2" pin="1"/>
+    </net>
+  </nets>
+</export>

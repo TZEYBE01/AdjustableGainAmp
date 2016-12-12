@@ -1,0 +1,15 @@
+Id,Designator,Package,Quantity,Mfg. Part Nr.,Supplier and ref
+1,U1,SSOP-16_3.9x4.9mm_Pitch0.635mm,1,LTC6082IGN#PBF,Digikey
+2,"C1,C2",C_1206_HandSoldering,2,202R18W102KV4E,Digikey
+3,C3,C_1206_HandSoldering,1,C1206C104K5RAC7867,Digikey
+4,CON1,BARREL_JACK,1,PJ-202A,Digikey
+5,"P1,P2",BNC_Socket_TYCO-AMP,2,1-1634612-0,Digikey
+6,"R1,R2",R_1206_HandSoldering,2,RC1206FR-072KL ,Digikey
+7,R3,R_1206_HandSoldering,1,RC1206FR-07100RL,Digikey
+8,R4,R_1206_HandSoldering,1,RC1206FR-073K01L,Digikey
+9,RV1,20k_DualPot,1,EVJ-Y96F03B24 ,Digikey
+10,RV2,2k_POT_SMD,1,ST32ETA202,Digikey
+11,U2,SOIC-8_3.9x4.9mm_Pitch1.27mm,1,AD603ARZ,Digikey
+,,,,,
+,,,,,
+Note: All parts can be sourced by searching Mfg. Part Nr. In Digikey website.,,,,,
